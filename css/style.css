@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: #F0F6F6;
+}
+
+.borda {
+    border-right: 1px solid rgba(255, 255, 255, 0.445);
+}
+
+.nav-link {
+    margin-right: 15px;
+}
+
+.nav-color {
+    background-color: #082C4D
+}
+
+.nav-link {
+    color: #F8F9FA;
+}
+
+.nav-link:hover {
+    color: #c6c7c9;
+}
+
+.footer-color {
+    background-color: #082C4D;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
