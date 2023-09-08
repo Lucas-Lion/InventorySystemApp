@@ -1,10 +1,9 @@
 <?php include 'includes/header.php'; ?>
 
 <body>
-
-    <div class="content">
+    <main class="col-12 col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <?php include 'includes/content_handler.php'; ?>
-    </div>
+    </main>
 
     <!--- footer --->
     <?php include 'includes/footer.php'; ?>

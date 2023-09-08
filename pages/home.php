@@ -1,6 +1,10 @@
-<div class="container">
-    <div class="title">
-        <i class="bi bi-clipboard-check-fill fs-1 mb-2"></i>
-        <h1 class="text-center fs-2">Sistema de Inventário</h1>
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <div class="text-center mt-4">
+        <i class="bi bi-clipboard-check-fill fs-1"></i>
+        <h1 class="mb-3">Máquinas Prontas</h1>
+        <hr class="text-dark m-auto w-25">
     </div>
-</div>
+
+    <hr class="w-50 text-dark m-auto mb-5">
+
+</main>
