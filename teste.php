@@ -20,10 +20,10 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Menu Lateral -->
-            <div class="col-12 col-md-3 col-lg-2 nav-color sidebar">
+            <div class="col-12 col-md-3 col-lg-2 nav-color sidebar position-fixed">
                 <a class="text-white text-decoration-none d-flex justify-content-center mt-3 mb-3" role="button"
                     href="http://www.sudesb.ba.gov.br/" target="_blank">
-                    <img src="images/SUDESB-BRANCO.png" width="130" alt="logomarca da SUDESB">
+                    <img src="images/SUDESB-BRANCO.png" width="150" alt="logomarca da SUDESB">
                 </a>
 
                 <ul class="nav nav-pills flex-column mt-2 mt-sm-0" id="menu">
@@ -121,14 +121,171 @@
                 <div class="text-center mt-4">
                     <i class="bi bi-pc-display fs-1"></i>
                     <h1 class="mb-3">Máquinas Prontas</h1>
-                    <hr class="text-dark m-auto w-25">
+                    <hr class="w-50 text-dark m-auto mb-5 mt-2">
                 </div>
 
-                <hr class="w-50 text-dark m-auto mb-5">
-
-                <button type="button" class="btn button-color text-light" role="button" aria-pressed="true">
+                <button type="button" class="btn button-color text-light mb-4" role="button" aria-pressed="true">
                     <i class="bi bi-plus"></i> Cadastrar
                 </button>
+
+                <div class="row mb-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-header button-color text-white text-center font-card">
+                                NOTEBOOK
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group font-list">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Tombo:</span></strong>
+                                        <span>12032</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Sistema Operacional:</span></strong>
+                                        <span>Linux</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Slot:</span></strong>
+                                        <span>DDR3</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Armazenamento:</span></strong>
+                                        <span>SSD</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="btn-group d-flex flex-row justify-content-between gap-1" role="group">
+                                    <button type="button" class="btn text-light button-color">
+                                        <i class="bi bi-pencil-square"></i> Editar
+                                    </button>
+                                    <button type="button" class="btn btn-danger">
+                                        <i class="bi bi-trash3-fill"></i> Excluir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-header button-color text-white text-center font-card">
+                                NOTEBOOK
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group font-list">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Tombo:</span></strong>
+                                        <span>12032</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Sistema Operacional:</span></strong>
+                                        <span>Linux</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Slot:</span></strong>
+                                        <span>DDR3</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Armazenamento:</span></strong>
+                                        <span>SSD</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="btn-group d-flex flex-row justify-content-between gap-1" role="group">
+                                    <button type="button" class="btn text-light button-color">
+                                        <i class="bi bi-pencil-square"></i> Editar
+                                    </button>
+                                    <button type="button" class="btn btn-danger">
+                                        <i class="bi bi-trash3-fill"></i> Excluir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-header button-color text-white text-center font-card">
+                                NOTEBOOK
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group font-list">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Tombo:</span></strong>
+                                        <span>12032</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Sistema Operacional:</span></strong>
+                                        <span>Linux</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Slot:</span></strong>
+                                        <span>DDR3</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Armazenamento:</span></strong>
+                                        <span>SSD</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="btn-group d-flex flex-row justify-content-between gap-1" role="group">
+                                    <button type="button" class="btn text-light button-color">
+                                        <i class="bi bi-pencil-square"></i> Editar
+                                    </button>
+                                    <button type="button" class="btn btn-danger">
+                                        <i class="bi bi-trash3-fill"></i> Excluir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 1 -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <div class="card-header button-color text-white text-center font-card">
+                                NOTEBOOK
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group font-list">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Tombo:</span></strong>
+                                        <span>12032</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Sistema Operacional:</span></strong>
+                                        <span>Linux</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Slot:</span></strong>
+                                        <span>DDR3</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <strong><span>Armazenamento:</span></strong>
+                                        <span>SSD</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="btn-group d-flex flex-row justify-content-between gap-1" role="group">
+                                    <button type="button" class="btn text-light button-color">
+                                        <i class="bi bi-pencil-square"></i> Editar
+                                    </button>
+                                    <button type="button" class="btn btn-danger">
+                                        <i class="bi bi-trash3-fill"></i> Excluir
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </main>
         </div>
     </div>
