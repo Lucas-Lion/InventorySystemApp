@@ -1,19 +1,11 @@
 <?php
-// Configurações do banco de dados
-$dbHost = "localhost";
-$dbUsername = "novo_usuario";
-$dbPassword = "senha";
-$dbName = "sistema_de_inventario";
-
-// Conexão do banco de dados
-$conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
-
-// Verifique se a conexão foi bem-sucedida
+require_once("config.php"); 
+// Verifica se a conexão foi bem-sucedida
 if ($conexao->connect_error) {
     die("Erro na conexão com o banco de dados: " . $conexao->connect_error);
-}
+} else {
 
-// Receba os dados do formulário HTML via POST
+// Recebe os dados do formulário HTML via POST
 $maquina = $_POST['maquina'];
 $tombo = $_POST['tombo'];
 $sistema = $_POST['sistema'];
@@ -25,8 +17,9 @@ $sql = "INSERT INTO maquinas (maquina, tombo, sistema, slot, armazenamento) VALU
 
 // Execute a consulta SQL
 if ($conexao->query($sql) === TRUE) {
-    echo "Dados inseridos com sucesso!";
+    header("Location: ../index.php?content=maquinas");
 } else {
     echo "Erro ao inserir os dados: " . $conexao->error;
+}
 }
 ?>

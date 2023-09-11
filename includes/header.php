@@ -100,13 +100,6 @@
                     <span class="ms-2">Toners</span>
                 </a>
             </li>
-            <!-- Perfil -->
-            <li class="nav-item mb-3 hover-option pt-2 pb-2">
-                <a href="?content=perfil" class="nav-link text-white" aria-current="page">
-                    <i class="bi bi-person-square"></i>
-                    <span class="ms-2">Perfil</span>
-                </a>
-            </li>
             <!-- Sair -->
             <li class="nav-item hover-option pt-2 pb-2">
                 <a href="#" class="nav-link text-white" aria-current="page">

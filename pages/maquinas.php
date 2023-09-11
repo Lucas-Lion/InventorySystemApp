@@ -1,3 +1,11 @@
+<?php
+session_start();
+include_once("scripts/config.php");
+
+$sql = "SELECT * FROM maquinas ORDER BY tombo DESC";
+$result = $conexao->query($sql);
+?>
+
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     <div class="text-center mt-4">
         <i class="bi bi-pc-display fs-1"></i>
@@ -11,41 +19,84 @@
     </button>
 
     <dialog>
-        <form id="machineForm">
-            <div class="form-group mb-4 font-card">
-                <label for="maquina" class="text-dark mb-2">Máquina:</label>
-                <input type="text" class="form-control w-100" id="maquina" name="maquina">
+        <form action="scripts/salvar.php" method="POST">
+            <div class="form-group mb-4 font-card text-center">
+                <label for="tombo" class="text-dark mb-2">Tombo:</label>
+                <input type="number" class="form-control w-100" id="tombo" name="tombo" required>
             </div>
             <div class="form-group mb-4 font-card">
-                <label for="tombo" class="text-dark mb-2">Tombo:</label>
-                <input type="number" class="form-control w-100" id="tombo" name="tombo">
+                <label for="maquina" class="text-dark mb-2">Máquina:</label>
+                <select name="maquina" id="maquina">
+                    <option value="" selected>Escolha o tipo:</option>
+                    <option value="desktop">Desktop</option>
+                    <option value="notebook">Notebook</option>
+                </select>
             </div>
             <div class="form-group mb-4 font-card">
                 <label for="sistema" class="text-dark mb-2">Sistema Operacional:</label>
-                <input type="text w-50" class="form-control w-100" id="sistema" name="sistema">
+                <select name="sistema" id="sistema">
+                    <option value="" selected>Escolha o tipo:</option>
+                    <option value="win">Windows</option>
+                    <option value="lin">Linux</option>
+                </select>
             </div>
             <div class="form-group mb-4 font-card">
-                <label for="sistema" class="text-dark mb-2">Slot:</label>
-                <input type="text" class="form-control w-100" id="slot" name="slot">
+                <label for="slot" class="text-dark mb-2">Slot:</label>
+                <select name="slot" id="slot">
+                    <option value="" selected>Escolha o tipo:</option>
+                    <option value="d1">DDR1</option>
+                    <option value="d2">DDR2</option>
+                    <option value="d3">DDR3</option>
+                    <option value="d4">DDR4</option>
+                    <option value="d5">DDR5</option>
+                </select>
             </div>
             <div class="form-group mb-4 font-card">
-                <label for="sistema" class="text-dark mb-2">Armazenamento:</label>
-                <input type="text" class="form-control w-100" id="armazenamento" name="armazenamento">
+                <label for="armazenamento" class="text-dark mb-2">Armazenamento:</label>
+                <select name="armazenamento" id="armazenamento">
+                    <option value="" selected>Escolha o tipo:</option>
+                    <option value="desktop">SSD</option>
+                    <option value="notebook">HDD</option>
+                </select>
+            </div>
+
+            <div class="text-left">
+                <input type="submit" value="Cadastrar" class="btn btn-primary button-color text-light border-0"
+                    id="Save">
+                <button type="button" class="btn btn-danger close" data-dismiss="modal">Fechar</button>
             </div>
         </form>
-        <div class="modal-footer d-flex flex-row ms-5 gap-2">
-            <button type="button" class="btn button-color text-light" id="btnSave" onclick="salvar()">
-                <i class="bi bi-check2"></i> Salvar</button>
-            <button type="button" class="btn btn-danger close" data-dismiss="modal">
-                <i class="bi bi-x-lg"></i> Fechar</button>
-        </div>
     </dialog>
 
-    
-    <div id="cardContainer">
 
-    </div>
-      
+    <table class="table text-center">
+  <thead class="text-light thead-color">
+    <tr>
+        <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Máquina</th>
+        <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Tombo</th>
+        <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Sistema Operacional</th>
+        <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Slot</th>
+        <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Armazenamento</th>
+        <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php 
+    while($rows = $result->fetch_assoc()){
+        echo "<tr>";
+        echo "<td>".$rows['maquina']."</td>";
+        echo "<td>".$rows['tombo']."</td>";
+        echo "<td>".$rows['sistema']."</td>";
+        echo "<td>".$rows['slot']."</td>";
+        echo "<td>".$rows['armazenamento']."</td>";
+        echo "<td>
+                <a href='scripts/editar.php?id=".$rows['id']."'><i class='bi bi-pencil-square me-4'></i></a> <a href='scripts/excluir.php?id=".$rows['id']."'><i class='bi bi-trash3-fill link-danger'></i></a></td>";
+    }
+
+    ?>
+  </tbody>
+</table>
+
 
     <!--
        <div class="row">

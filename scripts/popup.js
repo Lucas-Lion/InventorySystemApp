@@ -14,7 +14,7 @@ buttonClose.onclick = function () {
 function salvar() {
 // Selecionar elementos do DOM
 const Modal = document.querySelector("dialog");
-const btnSave = document.querySelector("#btnSave");
+const btnSave = document.querySelector("#Save");
 const maquinaInput = document.querySelector("#maquina");
 const tomboInput = document.querySelector("#tombo");
 const sistemaInput = document.querySelector("#sistema");
@@ -88,22 +88,4 @@ btnSave.onclick = function () {
 buttonClose.onclick = function () {
     Modal.close();
 };
-}
-
-// Supondo que você já tenha os dados do formulário em variáveis como tombo, sistema, slot e armazenamento
-
-$.ajax({
-    type: "POST",
-    url: "salvar.php",
-    data: {
-        maquina: maquina,
-        tombo: tombo,
-        sistema: sistema,
-        slot: slot,
-        armazenamento: armazenamento
-    },
-    success: function (response) {
-        // Aqui você pode lidar com a resposta do servidor, como exibir uma mensagem de sucesso
-        alert(response);
-    }
-});
+};

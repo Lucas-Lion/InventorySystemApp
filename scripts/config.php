@@ -1,9 +1,8 @@
 <?php 
-
 // Configurações do banco de dados
 $dbHost = "localhost";
-$dbUsername = "novo_usuario";
-$dbPassword = "senha";
+$dbUsername = "lucas_lion";
+$dbPassword = "Cilnopenack123";
 $dbName = "sistema_de_inventario";
 
 // Conexão do banco de dados
