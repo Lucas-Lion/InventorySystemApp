@@ -102,7 +102,7 @@
             </li>
             <!-- Sair -->
             <li class="nav-item hover-option pt-2 pb-2">
-                <a href="#" class="nav-link text-white" aria-current="page">
+                <a href="login.php" class="nav-link text-white" aria-current="page">
                     <i class="bi bi-box-arrow-left"></i>
                     <span class="ms-2">Sair</span>
                 </a>

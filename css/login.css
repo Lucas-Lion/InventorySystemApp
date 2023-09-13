@@ -4,9 +4,9 @@
 /* TELA DE LOGIN */
 
 :root {
-    --BODY-1:         #f5f5f5;
-    --BODY-DEGRADE-1: #03588C;
-    --BODY-DEGRADE-2: #173F7F;
+    --BODY-1:         #d8d7d7;
+    --BODY-DEGRADE-1: #173F7F;
+    --BODY-DEGRADE-2: #07213a;
     --LOGIN:          #ecebeb;
     --BUTTON:         #dc4a4a;
     --BUTTON-HOVER:   #a43232;
@@ -19,7 +19,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, var(--BODY-1) 50%, var(--BODY-DEGRADE-1) 50%, var(--BODY-DEGRADE-2) 100%);
+    background: linear-gradient(to bottom, var(--BODY-1) 50%, var(--BODY-DEGRADE-2) 50%);
     background-size: 10%;
     font-family: var(--FONT);
     overflow: hidden;

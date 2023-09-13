@@ -19,45 +19,26 @@ $result = $conexao->query($sql);
     </button>
 
     <dialog>
-        <form action="scripts/salvar.php" method="POST">
+        <form action="scripts/salvar.php" method="POST" class="text-center">
             <div class="form-group mb-4 font-card text-center">
-                <label for="tombo" class="text-dark mb-2">Tombo:</label>
+                <label for="tombo" class="text-dark mb-2">Tombo</label>
                 <input type="number" class="form-control w-100" id="tombo" name="tombo" required>
             </div>
             <div class="form-group mb-4 font-card">
-                <label for="maquina" class="text-dark mb-2">Máquina:</label>
-                <select name="maquina" id="maquina">
-                    <option value="" selected>Escolha o tipo:</option>
-                    <option value="desktop">Desktop</option>
-                    <option value="notebook">Notebook</option>
-                </select>
+                <label for="maquina" class="text-dark mb-2">Máquina</label>
+                <input type="text" class="form-control w-100" id="maquina" name="maquina" required>
             </div>
             <div class="form-group mb-4 font-card">
-                <label for="sistema" class="text-dark mb-2">Sistema Operacional:</label>
-                <select name="sistema" id="sistema">
-                    <option value="" selected>Escolha o tipo:</option>
-                    <option value="win">Windows</option>
-                    <option value="lin">Linux</option>
-                </select>
+                <label for="sistema" class="text-dark mb-2">Sistema Operacional</label>
+                <input type="text" class="form-control w-100" id="sistema" name="sistema" required>
             </div>
             <div class="form-group mb-4 font-card">
-                <label for="slot" class="text-dark mb-2">Slot:</label>
-                <select name="slot" id="slot">
-                    <option value="" selected>Escolha o tipo:</option>
-                    <option value="d1">DDR1</option>
-                    <option value="d2">DDR2</option>
-                    <option value="d3">DDR3</option>
-                    <option value="d4">DDR4</option>
-                    <option value="d5">DDR5</option>
-                </select>
+                <label for="slot" class="text-dark mb-2">Slot</label>
+                <input type="text" class="form-control w-100" id="slot" name="slot" required>
             </div>
             <div class="form-group mb-4 font-card">
-                <label for="armazenamento" class="text-dark mb-2">Armazenamento:</label>
-                <select name="armazenamento" id="armazenamento">
-                    <option value="" selected>Escolha o tipo:</option>
-                    <option value="desktop">SSD</option>
-                    <option value="notebook">HDD</option>
-                </select>
+                <label for="armazenamento" class="text-dark mb-2">Armazenamento</label>
+                <input type="text" class="form-control w-100" id="armazenamento" name="armazenamento" required>
             </div>
 
             <div class="text-left">
@@ -69,7 +50,7 @@ $result = $conexao->query($sql);
     </dialog>
 
 
-    <table class="table text-center">
+    <table class="table table-striped text-center">
   <thead class="text-light thead-color">
     <tr>
         <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Máquina</th>
@@ -90,9 +71,8 @@ $result = $conexao->query($sql);
         echo "<td>".$rows['slot']."</td>";
         echo "<td>".$rows['armazenamento']."</td>";
         echo "<td>
-                <a href='scripts/editar.php?id=".$rows['id']."'><i class='bi bi-pencil-square me-4'></i></a> <a href='scripts/excluir.php?id=".$rows['id']."'><i class='bi bi-trash3-fill link-danger'></i></a></td>";
+                <a href='scripts/editar_dados.php?id=".$rows['id']."'><i class='bi bi-pencil-square me-4'></i></a> <a href='scripts/excluir.php?id=".$rows['id']."'><i class='bi bi-trash3-fill link-danger'></i></a></td>";
     }
-
     ?>
   </tbody>
 </table>
