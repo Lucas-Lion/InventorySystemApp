@@ -13,7 +13,7 @@ $result = $conexao->query($sql);
         <hr class="w-50 text-dark m-auto mb-5 mt-2">
     </div>
 
-    <button type="button" class="btn button-color text-light bg-gradient mb-5" data-bs-toggle="modal"
+    <button type="button" class="btn button-color text-light bg-gradient mb-5 fw-bold" data-bs-toggle="modal"
         data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="bi bi-plus"></i>
         Cadastrar</button>
 
@@ -76,6 +76,20 @@ $result = $conexao->query($sql);
                             </select>
                         </div>
                         <div class="mb-3">
+                            <label for="processador" class="col-form-label fw-bold">Processador:</label>
+                            <select class="form-select" aria-label="Default select example" id="processador" name="processador"
+                                required>
+                                <option selected>Selecione</option>
+                                <option value="AMD">AMD</option>
+                                <option value="Atom">Atom</option>
+                                <option value="Celerom">Celerom</option>
+                                <option value="Pentium">Pentium</option>
+                                <option value="i3">i3</option>
+                                <option value="i5">i5</option>
+                                <option value="i7">i7</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
                             <label for="maquina" class="col-form-label fw-bold">Armazenamento:</label>
                             <select class="form-select" aria-label="Default select example" id="armazenamento"
                                 name="armazenamento" required>
@@ -108,14 +122,13 @@ $result = $conexao->query($sql);
                 <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Slot da memória</th>
                 <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Processador</th>
                 <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Armazenamento</th>
-                <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Capacidade de armazenamento</th>
                 <th scope="col" style="background-color: #082C4D; color: whitesmoke;">Ações</th>
             </tr>
         </thead>
         <tbody>
-            <?php 
+    <?php 
     while($rows = $result->fetch_assoc()){
-        echo "<tr>";
+        echo "<tr class='fw-bold'>";
         echo "<td>".$rows['id']."</td>";
         echo "<td>".$rows['maquina']."</td>";
         echo "<td>".$rows['tombo']."</td>";
@@ -124,14 +137,16 @@ $result = $conexao->query($sql);
         echo "<td>".$rows['slot']."</td>";
         echo "<td>".$rows['processador']."</td>";
         echo "<td>".$rows['armazenamento']."</td>";
-        echo "<td>".$rows['capacidade']."GB</td>";
         echo "<td>
                 <a href='scripts/editar_dados.php?id=".$rows['id']."'><i class='bi bi-pencil-square me-4'></i></a>
                 
-                <a href='scripts/delete.php?id=".$rows['id']."'><i class='bi bi-trash3-fill link-danger'></i></a></td>";
+                <a href='scripts/delete.php?id=".$rows['id']."' onclick='confirmDelete(" . $rows['id'] . ")'><i class='bi bi-trash3-fill link-danger'></i></a></td>";
     }
     ?>
         </tbody>
         
     </table>
+    <script src="js/modalDelete.js"></script>
 </main>
+
+

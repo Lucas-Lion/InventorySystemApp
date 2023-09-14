@@ -9,16 +9,16 @@
             </div>
 
             <main class="col-12 col-md-9 ms-sm-auto col-lg-12 px-md-4">
+                
                 <?php include 'includes/content_handler.php'; ?>
+               
             </main>
 
         </div>
+        
     </div>
-
     <!--- footer --->
     <?php include 'includes/footer.php'; ?>
-
-    <script src="scripts/popup.js"></script>
 </body>
 
 </html>

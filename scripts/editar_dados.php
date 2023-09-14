@@ -18,9 +18,8 @@ if(!empty($_GET['id'])) {
             $sistema = $row['sistema'];
             $slot = $row['memoria'];
             $slot = $row['slot'];
-            $slot = $row['processador'];
+            $slot = $row['processador']; 
             $armazenamento = $row['armazenamento'];
-            $armazenamento = $row['capacidade'];
         }
     }
     else {
@@ -105,37 +104,6 @@ if(!empty($_GET['id'])) {
             </div>
         </form>
     </div>
-
-    <!-- <form action="saveEdit.php" method="POST" style="background-color: #07213ade;" class="p-4 rounded text-center">
-            <div class="form-group mb-4 font-card">
-                <label for="tombo" class="text-light mb-2">Tombo</label>
-                <input type="number" class="form-control w-100" id="tombo" name="tombo" value="<?php echo $tombo ?>"
-                    required>
-            </div>
-            <div class="form-group mb-4 font-card">
-                <label for="maquina" class="text-light mb-2">Máquina</label>
-                <input type="text" class="form-control w-100" id="maquina" name="maquina" value="<?php echo $maquina ?>" required>
-            </div>
-            <div class="form-group mb-4 font-card">
-                <label for="sistema" class="text-light mb-2">Sistema Operacional</label>
-                <input type="text" class="form-control w-100" id="sistema" name="sistema" value="<?php echo $sistema ?>" required>
-            </div>
-            <div class="form-group mb-4 font-card">
-                <label for="slot" class="text-light mb-2">Slot</label>
-                <input type="text" class="form-control w-100" id="slot" name="slot" value="<?php echo $slot ?>"
-                    required>
-            </div>
-            <div class="form-group mb-4 font-card">
-                <label for="armazenamento" class="text-light mb-2">Armazenamento</label>
-                <input type="text" class="form-control w-100" id="armazenamento" name="armazenamento" value="<?php echo $armazenamento ?>"
-                    required>
-            </div>
-            <input type="hidden" name="id" value="<?php echo $id?>">
-            <div class="d-flex flex-row justify-content-center gap-5">
-                <input type="submit" value="Editar" class="btn btn-primary button-color text-light border-0 pe-5 ps-5" id="update" name="update">
-                <a href="../index.php?content=maquinas"><button type="button" class="btn btn-danger close pe-5 ps-5" data-dismiss="modal">Fechar</button></a>
-            </div>
-        </form> -->
 
 </body>
 
