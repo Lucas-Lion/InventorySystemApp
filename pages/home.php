@@ -6,12 +6,14 @@
         <p>Seja Bem-Vindo(a) ao inventário da Informática!</p>
 
 
-        <ol class="breadcrumb mb-4 dash-space">
-            <li class="breadcrumb-item active fs-4">Dashboard:</li>
-        </ol>
-        <div class="row d-flex justify-content-center" id="cards">
+        <div class="bg-secondary bg-gradient pe-2 ps-2 rounded shadow-lg">
+            <ol class="breadcrumb mb-4 dash-space">
+                <li class="breadcrumb-item text-light active fs-4 mt-3 ms-3">Dashboard</li>
+            </ol>
+            <div class="row ms-4" id="cards">
             
             
+            </div>
         </div>
     </div>
 

@@ -3,7 +3,8 @@
         {
             "title":"Máquinas Prontas",
             "dado_result":"contagem_maquinas",
-            "icon": "bi bi-pc-display"
+            "icon": "bi bi-pc-display",
+            "link": "?content=maquinas"
         },
         {
             "title":"Dispositivos de Rede",

@@ -6,6 +6,10 @@
     margin-top: 6em;
 }
 
+.link-dashboard {
+    text-decoration: none;
+}
+
 body {
     background-color: #eeeded;
     margin: 0;
