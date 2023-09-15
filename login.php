@@ -31,14 +31,14 @@
                         ?>
             </div>
 
-            <form action="scripts/login_AD.php" method="POST">
+            <form action="scripts/login_AD.php" method="POST" id="meuFormulario">
                 <label id="label-usuario" for="user">Usuário</label>
-                <input type="text" name="usuario" id="user" placeholder="Digite o seu usuário..." required>
+                <input type="text" name="usuario" id="user" placeholder="Digite o seu usuário..." autocomplete="off" form="meuFormulario" required>
 
                 <br>
 
                 <label id="label-senha" for="password">Senha</label>
-                <input type="password" name="senha" id="password" placeholder="Digite sua senha..." required>
+                <input type="password" name="senha" id="password" placeholder="Digite sua senha..." autocomplete="off" form="meuFormulario" required>
 
                 <br>
                 

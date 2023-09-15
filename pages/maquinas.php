@@ -28,7 +28,7 @@ $result = $conexao->query($sql);
                     <form action="scripts/salvar.php" method="POST">
                         <div class="mb-3">
                             <label for="tombo" class="col-form-label fw-bold">Tombo:</label>
-                            <input type="number" class="form-control" id="tombo" name="tombo" required>
+                            <input type="number" class="form-control" id="tombo" name="tombo" required oninput="javascript: if (this.value.length > 15) this.value = this.value.slice(0, 15);">
                         </div>
                         <div class="mb-3">
                             <label for="maquina" class="col-form-label fw-bold">Máquina:</label>
@@ -140,7 +140,7 @@ $result = $conexao->query($sql);
         echo "<td>
                 <a href='scripts/editar_dados.php?id=".$rows['id']."'><i class='bi bi-pencil-square me-4'></i></a>
                 
-                <a href='scripts/delete.php?id=".$rows['id']."' onclick='confirmDelete(" . $rows['id'] . ")'><i class='bi bi-trash3-fill link-danger'></i></a></td>";
+                <a href='javascript:void(0);' onclick='confirmDelete(" . $rows['id'] . ")'><i class='bi bi-trash3-fill link-danger'></i></a></td>";
     }
     ?>
         </tbody>

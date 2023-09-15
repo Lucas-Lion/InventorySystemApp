@@ -2,7 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 
-/* #e4e3e3,  */
+#opa {
+    margin-bottom: 4em;
+}
+
+.teste {
+    margin-right: 58em;
+    padding-top: 1em;
+}
+
+.carinha {
+    font-size: 20em;
+}
+
 body {
     background-color: #d8d7d7;
     margin: 0;

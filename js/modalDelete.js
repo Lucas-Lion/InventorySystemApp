@@ -1,6 +1,13 @@
 function confirmDelete(id) {
-    if (confirm("Tem certeza que deseja excluir este contrato?")) {
-        // Redirecionar para a página de exclusão
-        window.location.href = 'scripts/delete.php?id=' + id;
+    
+    var resposta = confirm("Deseja realmente excluir?");
+
+    if (resposta) {
+
+        window.location.replace("scripts/delete.php?id=" + id + "&confirm=true");
+
+    } else {
+        
+        window.location.replace("index.php?content=maquinas");
     }
 }
