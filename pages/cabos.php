@@ -11,7 +11,7 @@
     </button>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog ">
+        <div class="modal-dialog">
             <div class="modal-content bg-light border-0 shadow-lg">
                 <div
                     class="modal-header nav-color bg-gradient text-white w-50 m-auto border-0 d-flex justify-content-center rounded-0 rounded-bottom">
@@ -21,8 +21,8 @@
                     <form action="scripts/salvar_cabos.php" method="POST">
                         <div class="mb-3">
                             <label for="cabo" class="col-form-label fw-bold">Tipo:</label>
-                            <select class="form-select" aria-label="Default select example" id="cabo"
-                                name="cabo" required>
+                            <select class="form-select" aria-label="Default select example" id="cabo" name="cabo"
+                                required>
                                 <option selected>Selecione</option>
                                 <option value="VGA">VGA</option>
                                 <option value="HDMI">HDMI</option>
@@ -47,15 +47,15 @@
         </div>
     </div>
 
-    <div class="bg-secondary bg-gradient pe-2 ps-2 rounded shadow-lg">
-            <ol class="breadcrumb mb-4 dash-space">
-                <li class="breadcrumb-item text-light active fs-4 mt-3 ms-3">Quantidade de cabos:</li>
-            </ol>
-            <div class="row ms-2 me-2" id="cards_cabos">
-            
-            
-            </div>
+    <div class="bg-dashboard bg-gradient pe-2 ps-2 rounded shadow-lg">
+        <ol class="breadcrumb mb-4 pt-2 dash-space">
+            <li class="breadcrumb-item text-light active fs-4 ms-3">Quantidade de cabos:</li>
+        </ol>
+        <div class="row ms-2 me-2" id="cards_cabos">
+
+
         </div>
+    </div>
 
 </main>
 

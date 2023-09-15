@@ -6,11 +6,11 @@
         <p>Seja Bem-Vindo(a) ao inventário da Informática!</p>
 
 
-        <div class="bg-secondary bg-gradient pe-2 ps-2 rounded shadow-lg">
+        <div class="bg-dashboard bg-gradient pe-2 ps-2 rounded shadow-lg">
             <ol class="breadcrumb mb-4 dash-space">
-                <li class="breadcrumb-item text-light active fs-4 mt-3 ms-3">Dashboard</li>
+                <li class="breadcrumb-item text-light active fs-3 mt-3 ms-3">Dashboard</li>
             </ol>
-            <div class="row ms-4" id="cards">
+            <div class="row pe-3 ps-3 d-flex justify-content-center" id="cards">
             
             
             </div>

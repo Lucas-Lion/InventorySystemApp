@@ -29,7 +29,28 @@ fetch("js/dashboard_cards.json").then((response) => {
           });
         });
       } else {
-        // Código para os outros cards (se houver)
+        // Faz a requisição para obter a contagem de máquinas
+        fetch("scripts/contagem_maquinas.php").then((response) => {
+          response.text().then((contagem) => {
+            card.dado_result = contagem;
+            // Atualiza o card com a contagem de máquinas
+            divCards.innerHTML += `
+              <div class="col-xl-3 col-md-6">
+                <a class="link-dashboard" href="${card.link}">
+                    <div class="card button-color text-white mb-4">
+                      <div class="card-body fs-4 border-bottom border-light mb-2">${card.title} <i class="fs-2 ms-2 text-white ${card.icon}"></i></div>
+                      <div class="card-footer d-flex justify-content-between mb-0">
+                        <p class="small text-white fs-5"><strong>Total:</strong></p>
+                        <div id="contagem_maquinas" class=" fs-1">
+                          <p>${card.dado_result}</p>
+                        </div>
+                      </div>
+                    </div>
+                </a>
+              </div>
+            `;
+          });
+        });
       }
     });
   });

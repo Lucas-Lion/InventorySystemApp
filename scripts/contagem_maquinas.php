@@ -1,8 +1,8 @@
 <?php
 // Conexão com o banco de dados (substitua pelos seus próprios detalhes de conexão)
 $servername = "localhost";
-$username = "lucas_lion";
-$password = "Cilnopenack123";
+$username = "novo_usuario";
+$password = "senha";
 $dbname = "sistema_de_inventario";
 
 // Conecta-se ao banco de dados
