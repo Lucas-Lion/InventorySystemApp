@@ -1,0 +1,29 @@
+{
+    "cards": [
+        {
+            "title":"VGA",
+            "dado_result":"",
+            "icon": "bi bi-usb-micro-fill"
+        },
+        {
+            "title":"HDMI",
+            "dado_result":"",
+            "icon": "bi bi-hdmi-fill"
+        },
+        {
+            "title":"DisplayPort",
+            "dado_result":"",
+            "icon": "bi bi-displayport-fill"
+        },
+        {
+            "title":"Força",
+            "dado_result":"",
+            "icon": "bi bi-plug-fill"
+        },
+        {
+            "title":"Rede",
+            "dado_result":"",
+            "icon": "bi bi-ethernet"
+        }
+    ]
+}
