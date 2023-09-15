@@ -2,21 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 
-#opa {
-    margin-bottom: 4em;
-}
-
-.teste {
-    margin-right: 58em;
-    padding-top: 1em;
-}
-
-.carinha {
-    font-size: 20em;
+.dash-space {
+    margin-top: 6em;
 }
 
 body {
-    background-color: #d8d7d7;
+    background-color: #eeeded;
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;

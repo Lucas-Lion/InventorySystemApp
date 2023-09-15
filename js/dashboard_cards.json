@@ -1,0 +1,39 @@
+{
+    "cards": [
+        {
+            "title":"Máquinas Prontas",
+            "dado_result":"contagem_maquinas",
+            "icon": "bi bi-pc-display"
+        },
+        {
+            "title":"Dispositivos de Rede",
+            "dado_result":"",
+            "icon": "bi bi-router-fill"
+        },
+        {
+            "title":"Toners",
+            "dado_result":"",
+            "icon": "bi bi-motherboard-fill"
+        },
+        {
+            "title":"Cabos",
+            "dado_result":"",
+            "icon": "bi bi-usb-plug-fill"
+        },
+        {
+            "title":"Periféricos",
+            "dado_result":"",
+            "icon": "bi bi-mouse-fill"
+        },
+        {
+            "title":"Ferramentas",
+            "dado_result":"",
+            "icon": "bi bi-hammer"
+        },
+        {
+            "title":"Hardwares",
+            "dado_result":"",
+            "icon": "bi bi-droplet-fill"
+        }
+    ]
+}
